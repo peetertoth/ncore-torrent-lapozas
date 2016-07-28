@@ -34,7 +34,7 @@ $(document).ready(function() {
         //var curr_open_0 = currentBox.next().next().css("display") == "block";
         //open = curr_open_0;
 
-        if (open) {
+        if (isOpen) {
             currentBox.children().find('a').eq(1).click();
         }
         if (b_open) {
@@ -59,9 +59,9 @@ $(document).ready(function() {
         currentBox = $('.box_torrent').eq(index);
 
         var curr_open_1 = currentBox.next().next().css("display") == "block";
-        //open = curr_open_1;
+        
 
-        if (open && !curr_open_1) {
+        if (isOpen && !curr_open_1) {
             currentBox.children().find('a').eq(1).click();
         }
         if (b_open) {
@@ -71,7 +71,7 @@ $(document).ready(function() {
         //setTimeout(function() {currentBox.css("background-color", "gold");}, 200);
         currentBox.animate({backgroundColor: "#ffd700" }, anim_len );
 
-        if (!checkVisible() || open) {
+        if (!checkVisible() || isOpen) {
             $(document).scrollTop(currentBox.offset().top);
         }
     };
