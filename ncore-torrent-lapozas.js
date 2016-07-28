@@ -2,11 +2,13 @@
 // @name         ncore torrent lapozás
 // @namespace    peetftp.ddns.net
 // @version      1.0
-// @description  torrent oldalon lehet billentyűkkel lapozni (,.-)
+// @description  torrent oldalon lehet billentyűkkel lapozni (,.-) leírás: https://github.com/peetertoth/ncore-torrent-lapozas/blob/master/README.md
 // @author       kyle
 // @match        https://ncore.cc/torrents.php*
 // @grant        none
 // @require      https://code.jquery.com/ui/1.11.4/jquery-ui.js
+// @updateURL    https://github.com/peetertoth/ncore-torrent-lapozas/blob/master/ncore-torrent-lapozas.js
+// @downloadURL  https://github.com/peetertoth/ncore-torrent-lapozas/blob/master/ncore-torrent-lapozas.js
 // ==/UserScript==
 
 var bgc;
