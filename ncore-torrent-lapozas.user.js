@@ -7,8 +7,8 @@
 // @match        https://ncore.cc/torrents.php*
 // @grant        none
 // @require      https://code.jquery.com/ui/1.11.4/jquery-ui.js
-// @updateURL    https://raw.githubusercontent.com/peetertoth/ncore-torrent-lapozas/master/ncore-torrent-lapozas.js
-// @downloadURL  https://raw.githubusercontent.com/peetertoth/ncore-torrent-lapozas/master/ncore-torrent-lapozas.js
+// @updateURL    https://raw.githubusercontent.com/peetertoth/ncore-torrent-lapozas/master/ncore-torrent-lapozas.user.js
+// @downloadURL  https://raw.githubusercontent.com/peetertoth/ncore-torrent-lapozas/master/ncore-torrent-lapozas.user.js
 // ==/UserScript==
 
 var bgc;
