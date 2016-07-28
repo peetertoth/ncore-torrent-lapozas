@@ -1,20 +1,20 @@
 // ==UserScript==
-// @name         ncore torrent lapozás
+// @name         ncore-torrent-lapozas
 // @namespace    peetftp.ddns.net
-// @version      1.0
+// @version      2
 // @description  torrent oldalon lehet billentyűkkel lapozni (,.-) leírás: https://github.com/peetertoth/ncore-torrent-lapozas/blob/master/README.md
 // @author       kyle
 // @match        https://ncore.cc/torrents.php*
 // @grant        none
 // @require      https://code.jquery.com/ui/1.11.4/jquery-ui.js
-// @updateURL    https://github.com/peetertoth/ncore-torrent-lapozas/blob/master/ncore-torrent-lapozas.js
-// @downloadURL  https://github.com/peetertoth/ncore-torrent-lapozas/blob/master/ncore-torrent-lapozas.js
+// @updateURL    https://raw.githubusercontent.com/peetertoth/ncore-torrent-lapozas/master/ncore-torrent-lapozas.js
+// @downloadURL  https://raw.githubusercontent.com/peetertoth/ncore-torrent-lapozas/master/ncore-torrent-lapozas.js
 // ==/UserScript==
 
 var bgc;
 var index = 0;
 var len;
-var open = false;
+var isOpen = false;
 var b_open = false;
 var anim_len = 500;
 
@@ -50,7 +50,7 @@ $(document).ready(function() {
             else
                 index++;
         } else {
-            if (index == 0)
+            if (index === 0)
                 index = len - 1;
             else
                 index--;
@@ -109,7 +109,7 @@ $(document).ready(function() {
                 foo.click();
                 $(document).scrollTop(currentBox.offset().top);
 
-                open = !open;
+                isOpen = !isOpen;
 
                 break;
             case 108:
@@ -123,8 +123,8 @@ $(document).ready(function() {
                 break;
             case 233:
                 //kép megnyitás: 'é'
-                var foo = currentBox.nextAll().find('.torrent_lenyilo_tartalom').first();
-                foo.children().find('a').first().click();
+                var bar = currentBox.nextAll().find('.torrent_lenyilo_tartalom').first();
+                bar.children().find('a').first().click();
                 break;
             case 225:
                 //ESC szimulálása: 'á'
