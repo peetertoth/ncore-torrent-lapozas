@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ncore-torrent-lapozas
 // @namespace    peetftp.ddns.net
-// @version      2
+// @version      1.0
 // @description  torrent oldalon lehet billentyűkkel lapozni (,.-) leírás: https://github.com/peetertoth/ncore-torrent-lapozas/blob/master/README.md
 // @author       kyle
 // @match        https://ncore.cc/torrents.php*
